@@ -1,0 +1,112 @@
+:root {
+    --brand: #6a41ed;
+    --body: #516171;
+    --border: rgba(0,0,0,0.08);
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Pioneers of the field */
+
+.features .tab-pane.active {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.features .tab-pane h3 {
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--color-secondary);
+}
+
+.features .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features .tab-pane ul li {
+  padding-bottom: 10px;
+}
+
+.features .tab-pane ul i {
+  font-size: 24px;
+  margin-right: 4px;
+  color: var(--color-primary);
+}
+
+.features .tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
+
+/*** Faculty ***/
+.team-item {
+  box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+  height: calc(100% - 38px);
+  transition: .5s;
+}
+
+.team-item img {
+  transition: .5s;
+}
+
+.team-item:hover img {
+  transform: scale(1.1);
+}
+
+.team-item:hover {
+  height: 100%;
+}
+
+.team-item .btn {
+  border-radius: 38px 38px 0 0;
+}
+
+/* Image Gallery */
+
+.image-section {
+  padding: 7rem 0; }
+  .image-section .image-folder {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding-bottom: 50px;
+    cursor: pointer; }
+    .image-section .image-folder .folder-thumbnail {
+      opacity: 0.8;
+      margin-bottom: 30px;
+      position: relative;
+      top: 0;
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease; }
+    .image-section .image-folder h3 {
+      font-weight: 600;
+      font-size: 18px; }
+    .image-section .image-folder strong {
+      font-weight: 800 !important;
+      font-size: 18px !important; }
+    .image-section .image-folder h3, .image-section .image-folder strong {
+      color: #2f2f2f;
+      text-decoration: none; }
+    .image-section .image-folder:before {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      content: "";
+      background: var(--brand);
+      height: 0%;
+      z-index: -1;
+      border-radius: 10px;
+      -webkit-transition: .3s all ease;
+      -o-transition: .3s all ease;
+      transition: .3s all ease; }
+    .image-section .image-folder:hover .folder-thumbnail {
+      top: -25px;
+      opacity: 1;
+    }
+    .image-section .image-folder:hover:before {
+      height: 70%; }
+      .tution li{
+        padding: 5px 0;
+      }
